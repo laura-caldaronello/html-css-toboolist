@@ -166,7 +166,7 @@ header h1{
   background-color: rgb(176 201 38);
 }
 
-.editorial,.q1goals,.recruiting,.mobile,.website,.sales{
+.tags{
   display: inline-block;
   height: 20px;
   border-radius: 10px;
@@ -199,7 +199,7 @@ header h1{
   content: 'Sales';
 }
 
-.editorial::before,.q1goals::before,.recruiting::before,.mobile::before,.website::before,.sales::before{
+.tags::before{
   color: white;
   font-size: 10px;
   line-height: 20px;
