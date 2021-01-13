@@ -1,0 +1,209 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.all{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(246 248 249);
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  height: 50px;
+  background-color: white;
+  padding: 5px;
+}
+
+header img{
+  height: 80%;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+header h1{
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.container{
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  margin-top: 25px;
+  background-color: white;
+}
+
+.indent{
+  padding-left: 40px;
+}
+
+/* per la centratura dei buttons ho trovato due alternative: la più breve è quella rappresentata dalle ultime due righe che si vedono in .actions ma non so quanto effettivamente si utilizzi questo "flex" */
+
+.actions{
+  height: 40px;
+  /* line-height: 36px; al posto delle ultime due righe ma non viene perfetto*/
+  border-bottom: 2px solid rgb(246 248 249);
+  display: flex;
+  align-items: center;
+}
+
+.actions button{
+  font-size: 10px;
+  font-weight: 700;
+  padding: 5px;
+  margin-right: 3px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+/* la seconda alternativa è togliere quelle due righe citate e sostituire a .actions button il codice sottostante commentato (in questo caso ho dovuto calcolare i margini a mente, che non mi sembra la cosa migliore, ma sono più conscia di quello che sto facendo) */
+
+/* .actions button{
+  font-size: 10px;
+  font-weight: 700;
+  height: 20px;
+  padding: 0 5px 0 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin: 9px 0 9px 0;
+} */
+
+#add-task{
+  color: white;
+  background-color: rgb(69 171 234);
+}
+
+#add-section{
+  color: lightgrey;
+  background-color: white;
+}
+
+.content ul{
+  list-style: none;
+}
+
+.list h3{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+.list h3::before{
+  content: '\25BE';
+  margin-left: -5px;
+}
+
+.list li{
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* inizio elementi a sinistra dell'elenco puntato */
+
+.yes{
+  border: 1px solid green;
+}
+
+.no{
+  border: 1px solid red;
+}
+
+.yes,.no{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.yes::before{
+  content: '\2713';
+  color: green;
+}
+
+.no::before{
+  content: '\2715';
+  color: red;
+}
+
+.yes::before,.no::before{
+  font-size: 10px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+/* fine elementi a sinistra dell'elenco punatato */
+
+/* inizio elementi a destra dell'elenco puntato */
+
+.editorial{
+  background-color: rgb(69 171 234);
+}
+
+.q1goals{
+  background-color: rgb(156 114 228);
+}
+
+.recruiting{
+  background-color: rgb(100 192 169);
+}
+
+.mobile{
+  background-color: rgb(242 158 51);
+}
+
+.website{
+  background-color: rgb(216 99 161);
+}
+
+.sales{
+  background-color: rgb(176 201 38);
+}
+
+.editorial,.q1goals,.recruiting,.mobile,.website,.sales{
+  display: inline-block;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.editorial::before{
+  content: 'Editorial';
+}
+
+.q1goals::before{
+  content: 'Q1 Goals';
+}
+
+.recruiting::before{
+  content: 'Recruiting';
+}
+
+.mobile::before{
+  content: 'Mobile';
+}
+
+.website::before{
+  content: 'Website';
+}
+
+.sales::before{
+  content: 'Sales';
+}
+
+.editorial::before,.q1goals::before,.recruiting::before,.mobile::before,.website::before,.sales::before{
+  color: white;
+  font-size: 10px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+/* fine elementi a destra dell'elenco puntato */
